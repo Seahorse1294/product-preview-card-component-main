@@ -36,7 +36,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [https://github.com/Seahorse1294/product-preview-card-component-main](https://github.com/Seahorse1294/product-preview-card-component-main)
+- Solution URL: [Github Solution](https://github.com/Seahorse1294/product-preview-card-component-main)
 - Live Site URL: [Live Site](https://aesthetic-haupia-23afce.netlify.app/)
 
 ## My process
@@ -59,4 +59,4 @@ In future projects I would like to focus on the responsiveness and the layout wh
 
 ## Author
 
-- Website - [https://github.com/Seahorse1294](Seahorse)
+- Website - [Seahorse Github](https://github.com/Seahorse1294)
