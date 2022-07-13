@@ -1,0 +1,170 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+
+:root{
+    --primary-colour:hsl(158, 36%, 37%);
+    --secondary-colour:hsl(30, 38%, 92%);
+    --neutral-colour1:hsl(212, 21%, 14%);
+    --neutral-colour2:hsl(228, 12%, 48%);
+    --neutral-colour3:hsl(0, 0%, 100%);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fraunces', 'Monsterrat';
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin:0;
+    height: 100vh;
+    background-color: var(--secondary-colour);
+}
+
+.flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-size: 14px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+}
+.container{
+    display:grid;
+    border-radius: 15px;
+    max-width:600px;
+    height: 40%;
+}
+
+.text{
+    background-color: var(--neutral-colour3);
+    padding:20px;
+    width: 100%;
+    border-radius: 0px 10px 10px 0;
+}
+
+
+.img img{
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.img, .text{
+    height: 450px;
+    width: 300px;
+}
+
+.price{
+    font-size: 2rem;
+    color:var(--primary-colour);
+    margin-right: 30px;
+}
+
+.prices{
+    margin: 20px 0;
+}
+
+.oldPrice{
+    text-decoration: line-through;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--neutral-colour2);
+    font-size: 0.75rem;
+
+}
+
+.text p{
+    color:var(--neutral-colour2)
+}
+
+.perfume{
+    text-transform: uppercase;
+    font-family: 'Fraunces';
+    letter-spacing: 0.5rem;
+    color:var(--neutral-colour2);
+    font-weight:lighter;
+}
+
+.cart{
+    background-color: var(--primary-colour);
+    text-align: center;
+    padding: 1px;
+    margin:10px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.cart > p{
+    margin-left: 10px;
+    color: white;
+}
+
+.hidden{
+    display:none;
+}
+
+@media only screen and (max-width: 500px){
+    .grid{
+        display:block;
+    }
+
+    .container{
+        width: 80%;
+        height: 70%;
+    }
+    .img, .text{
+        width: 100%;
+    }
+    .img{
+        height: 40%;
+    }
+
+    .img{
+        display:none;
+    }
+
+    .hidden{
+        display:contents;
+    }
+
+    .hidden img{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .text >*{
+        padding:0px;
+        margin:0;
+        
+    }
+
+    .text{
+        border-radius: 0 0 10px 10px;
+        height: 60%;
+    }
+
+}
