@@ -94,7 +94,6 @@ p{
     justify-content: center;
     color: var(--neutral-colour2);
     font-size: 0.75rem;
-
 }
 
 .text p{
@@ -127,12 +126,13 @@ p{
     display:none;
 }
 
-@media only screen and (max-width: 500px){
+@media (max-width: 500px){
     .grid{
         display:block;
     }
 
     .container{
+        display: block;
         width: 80%;
         height: 70%;
     }
@@ -148,23 +148,32 @@ p{
     }
 
     .hidden{
-        display:contents;
+        display:block;
     }
 
     .hidden img{
         width: 100%;
         border-radius: 10px 10px 0 0;
+        margin:-5px 0;
     }
 
-    .text >*{
-        padding:0px;
+    .text > * {
         margin:0;
-        
+        padding: 5px;
+    }
+
+    .text h1{
+        text-align: left;
     }
 
     .text{
         border-radius: 0 0 10px 10px;
         height: 60%;
+    }
+
+    .prices{
+        display:grid;
+        padding: 25px;
     }
 
 }
